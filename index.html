@@ -41,6 +41,51 @@ body {margin:0;}
 .active {
   background-color: #4CAF50;
 }
+  
+  
+  
+#cf {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+@keyframes cf3FadeInOut {
+  0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+#cf3 img.top {
+animation-name: cf3FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 10s;
+animation-direction: alternate;
+}
+  
+  
+  
+  
 </style>
 
 <body style="">
@@ -65,6 +110,10 @@ body {margin:0;}
 I am a Postbaccalaureate Research Fellow at the <a href="https://www.niehs.nih.gov/index.cfm">NIEHS-NIH</a>, working in the <a href="https://www.niehs.nih.gov/research/atniehs/labs/ln/pi/dn/index.cfm">Developmental Neurobiology Group</a>.</p>
 
 
+ <div id="cf">
+  <img class="bottom" src="before.jpg" />
+  <img class="top" src="after.jpg" />
+</div>
 
 
 
